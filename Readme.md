@@ -94,15 +94,15 @@ Other stuff to do
 ```
 > rm -rf .git
 > git init
+```
+* Create a new repository with the same name (case sensitive) as your app folder on https://github.com/.
+* Edit the package.json YOUR REPOSITORY to be your github repo https.
+* Push your repository to the remote server:
+
+```
 > git add .
 > git commit -m "initial commit"
-```
-
-* Create a new repository with the same name (case sensitive) as your app folder on https://github.com/.
-* Edit the package.json YOUR REPOSITORY to be your github repo url
-
-```
-> git remote set origin <your-repo-github-url>
+> git remote set origin <your-repo-https>
 > git push --set-upstream origin master
 ```
 
