@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('react-crop.css');
+@import url('react-card.css');
+@import url('pre-loader.css');
+
+/*
+	This stylesheet is for global attributes to be consistent throughout the application.
+	Do not style specific components here.
+*/
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+.cards {
+	background-color: #000000;
+}
