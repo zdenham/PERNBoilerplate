@@ -61,7 +61,7 @@ One last thing for the database. In your PERNBoilerplate navigate to ```/server/
 
 ### Installing Packages and Running App
 
-Now that your database is created, change directories back to PERNBoilerplate to install your local npm packages.
+Now that your database is created, change directories back to PERNBoilerplate to install your local npm packages. You'll need npm for this step. If you don't have it, I recommend installing with brew!
 
 ```
 > npm install 
