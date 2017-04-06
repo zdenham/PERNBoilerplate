@@ -3,12 +3,22 @@ Lightweight PERN Boilerplate
 
 Usage
 --------------------
+
+### Cloaning Repository
+
 ```
+> cd where/you/want/your/app
 > git clone git@github.com:zdenham/PERNBoilerplate.git 
 > cd PERNBoilerplate 
 ```
 
-Set up postgres, can use command line or use https://postgresapp.com/documentation/gui-tools.html which installs postgres for you and provides a graphical user interface for your local postgres servers. Start a postgres server, make sure it is running on port 5432 (the default port). 
+### Installing Postgresql
+
+We are using postgres for our Database. You can install it manually or use https://postgresapp.com/documentation/gui-tools.html which installs postgres for you and provides a graphical user interface for your local postgres servers. 
+
+After installing, start a postgres server, make sure it is running on port 5432 (the default port).
+
+### Create a database
 
 Now you need to create a psql db. You do this by starting the psql shell:
 
@@ -17,6 +27,7 @@ Now you need to create a psql db. You do this by starting the psql shell:
 # CREATE DATABASE db;
 # \q
 ```
+
 One last thing for the database. In your PERNBoilerplate navigate to ```/server/database.js``` and edit "YOURUSERNAME" to your computer username. This can be seen with:
 
 ```
@@ -24,14 +35,16 @@ One last thing for the database. In your PERNBoilerplate navigate to ```/server/
 > ls
 ```
 
-Now that your database is created, change directories back to PERNBoilerplate and run your app!
+### Installing Packages and Running App
+
+Now that your database is created, change directories back to PERNBoilerplate and run your app! If you don't have npm, first make sure to install that. I recommend using homebrew!
 
 ```
 > npm install 
 > npm run server 
 ```
 
-Your backend API should beg running! Now run the front end on a separate server:
+Your backend API should be running! Now run the front end on a separate server:
 
 Open new tab: ⌘t
 
