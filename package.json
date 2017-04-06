@@ -1,5 +1,5 @@
 {
-  "name": "chipotlai",
+  "name": "YOUR APP NAME",
   "version": "1.0.0",
   "description": "platform to train cv",
   "main": "index.jsx",
@@ -8,7 +8,7 @@
     "client": "webpack-dev-server",
     "server": "nodemon server/server.js"
   },
-  "author": "Zac Denham",
+  "author": "YOUR NAME HERE",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.24.0",
@@ -41,5 +41,5 @@
   "devDependencies": {
     "react-hot-loader": "^1.3.1"
   },
-  "repository": "git@github.com:zdenham/PERNBoilerplate.git"
+  "repository": "YOUR GIT REPOSITORY HERE"
 }
