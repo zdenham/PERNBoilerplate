@@ -1,19 +1,32 @@
 PERN Boilerplate
 ====================
 
-> git clone git@github.com:zdenham/PERNBoilerplate.git
-> cd PERNBoilerplate
+Usage
+--------------------
+```
+> git clone git@github.com:zdenham/PERNBoilerplate.git 
+> cd PERNBoilerplate 
+```
 
-Set up postgres, can use command line or for a GUI use
-https://postgresapp.com/documentation/gui-tools.html
-Which installs postgres for you.
+Set up postgres, can use command line or use https://postgresapp.com/documentation/gui-tools.html which installs postgres for you and provides a GUI for your databases. You need to create a psql db. You do this by starting the psql shell:
 
-> change author/git repo in package.json
-> npm install
-> npm run server
+```
+> psql
+> CREATE DATABASE db;
+> \q
+```
 
-⌘ t
+Now that your database is created, run your app!
 
-> npm run client
+```
+> npm install 
+> npm run server 
+```
 
-navigate to localhost:8080
+Open new tab: ⌘t
+
+```
+> npm run client \n
+```
+
+navigate to http://localhost:8080 to view your app!

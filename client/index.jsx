@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MediaRenderer from './components/conditional-media-renderer.jsx';
+import ExampleComponent from './components/example-component.jsx';
  
 ReactDOM.render(
   <div>
-    <App />
+    <ExampleComponent />
   </div>,
   document.querySelector("#container")
 );  
