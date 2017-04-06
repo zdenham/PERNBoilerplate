@@ -1,5 +1,5 @@
-PERN Boilerplate
-====================
+Lightweight PERN Boilerplate
+=============================
 
 Usage
 --------------------
@@ -31,7 +31,7 @@ Now that your database is created, change directories back to PERNBoilerplate an
 > npm run server 
 ```
 
-Your backend API should be running! Now run the front end on a separate server:
+Your backend API should beg running! Now run the front end on a separate server:
 
 Open new tab: ⌘t
 
@@ -40,3 +40,28 @@ Open new tab: ⌘t
 ```
 
 navigate to http://localhost:8080 to view your app!
+
+
+Other stuff to do
+--------------------
+
+Edit the package.json YOUR APP NAME, YOUR NAME, YOUR REPOSITORY.
+
+Rename folder to your app name.
+
+Reinitialize git:
+
+```
+> rm -rf .git
+> git init
+```
+
+Create a repository of your folder name on Github web client.
+
+```
+> git add .
+> git commit -m "initial commit"
+> git remote set origin <your-repo-name>
+> git push --set-upstream origin master
+```
+
