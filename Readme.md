@@ -4,7 +4,7 @@ Lightweight PERN Boilerplate
 Usage
 --------------------
 
-### Cloaning Repository
+### Cloning Repository
 
 ```
 > cd where/you/want/your/app
@@ -37,7 +37,7 @@ One last thing for the database. In your PERNBoilerplate navigate to ```/server/
 
 ### Installing Packages and Running App
 
-Now that your database is created, change directories back to PERNBoilerplate and run your app! If you don't have npm, first make sure to install that. I recommend using homebrew!
+Now that your database is created, change directories back to PERNBoilerplate, install your npm packages, and run your app! If you don't have npm, first make sure to install that. I recommend using homebrew!
 
 ```
 > npm install 
@@ -58,11 +58,11 @@ navigate to http://localhost:8080 to view your app!
 Other stuff to do
 --------------------
 
-Edit the package.json YOUR APP NAME, YOUR NAME, YOUR REPOSITORY.
+* Edit the package.json YOUR APP NAME, YOUR NAME, YOUR REPOSITORY.
 
-Rename folder to your app name.
+* Rename folder to your app name.
 
-Reinitialize git:
+* Reinitialize git:
 
 ```
 > rm -rf .git
