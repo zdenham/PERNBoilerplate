@@ -35,13 +35,20 @@ One last thing for the database. In your PERNBoilerplate navigate to ```/server/
 > ls
 ```
 
-### Installing Packages and Running App
+### Installing Packages
 
-Now that your database is created, change directories back to PERNBoilerplate, install your npm packages, and run your app! If you don't have npm, first make sure to install that. I recommend using homebrew!
+Now that your database is created, change directories back to PERNBoilerplate to install your local npm packages. We are also installing two packages globally, nodemon and webpack-dev-server, which are developer command line tools that reload your app when you make changes to either the front or back end respectively! You will need npm for this step. If you don't have npm, I recommend installing it with homebrew!
 
 ```
 > npm install 
-> npm run server 
+> npm install -g webpack-dev-server
+> npm install -g nodemon
+```
+
+### Running the App
+
+```
+> npm run server
 ```
 
 Your backend API should be running! Now run the front end on a separate server:

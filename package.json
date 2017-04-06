@@ -1,5 +1,5 @@
 {
-  "name": "YOUR APP NAME",
+  "name": "YOURAPPNAME",
   "version": "1.0.0",
   "description": "platform to train cv",
   "main": "index.jsx",
@@ -8,7 +8,7 @@
     "client": "webpack-dev-server",
     "server": "nodemon server/server.js"
   },
-  "author": "YOUR NAME HERE",
+  "author": "YOUR NAME",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.24.0",
