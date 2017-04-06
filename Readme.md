@@ -14,9 +14,31 @@ Usage
 
 ### Installing Postgresql
 
-We are using postgres for our Database. You can install it manually or use https://postgresapp.com/documentation/gui-tools.html which installs postgres for you and provides a graphical user interface for your local postgres servers. 
+We are using postgres for our Database, so first we need to install postgres. You can accomplish this easily with homebrew! If you don’t have it, definitely install brew by following https://brew.sh/ . After that:
 
-After installing, start a postgres server, make sure it is running on port 5432 (the default port).
+```
+> brew update
+> brew doctor
+> brew install postgresql
+```
+
+### Running Postgres Server
+
+We need to run a postgres server to host our databases on our local machine:
+
+```
+> brew tap homebrew/services
+> brew services start postgresql
+```
+
+you can check to see if Postgres is running by enterinig:
+
+```
+lsof -i tcp:5432
+```
+
+You should see some processes running with postgres and PIDs, this means your database server is running on port 5432 (the default port)!
+
 
 ### Create a database
 
@@ -28,7 +50,9 @@ Now you need to create a psql db. You do this by starting the psql shell:
 # \q
 ```
 
-One last thing for the database. In your PERNBoilerplate navigate to ```/server/database.js``` and edit "YOURUSERNAME" to your computer username. This can be seen with:
+### Connecting to the database
+
+One last thing for the database. In your PERNBoilerplate navigate to ```/server/database.js``` and edit "YOURUSERNAME" to your computer username so your app can connect to your shiny new database. In case you forgot, your username can be found by entering:
 
 ```
 > cd /Users
@@ -65,23 +89,24 @@ navigate to http://localhost:8080 to view your app!
 Other stuff to do
 --------------------
 
-* Edit the package.json YOUR APP NAME, YOUR NAME, YOUR REPOSITORY.
-
+* Edit the package.json YOUR APP NAME, YOUR NAME, YOUR DESCRIPTION.
 * Rename folder to your app name.
-
 * Reinitialize git:
 
 ```
 > rm -rf .git
 > git init
 ```
-
-Create a repository of your folder name on Github web client.
-
 ```
 > git add .
 > git commit -m "initial commit"
-> git remote set origin <your-repo-name>
+```
+
+* Create a new repository with the same name (case sensitive) as your app folder on https://github.com/.
+* Edit the package.json YOUR REPOSITORY to be your github repo url
+
+```
+> git remote set origin <your-repo-github-url>
 > git push --set-upstream origin master
 ```
 
