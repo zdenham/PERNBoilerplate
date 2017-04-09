@@ -45,7 +45,8 @@ You should see some processes running with postgres and PIDs, this means your da
 Now you need to create a psql db. You do this by starting the psql shell:
 
 ```
-> psql
+> creatdb
+> psql -h localhost
 # CREATE DATABASE db;
 # \q
 ```
@@ -105,4 +106,9 @@ Other stuff to do
 > git remote set origin <your-repo-https>
 > git push --set-upstream origin master
 ```
+
+Building the App
+--------------------
+
+To start, just edit the example component.
 
